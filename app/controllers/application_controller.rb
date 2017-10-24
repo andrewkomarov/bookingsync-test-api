@@ -1,8 +1,6 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery with: :exception
-  #before_action :set_headers
 
-  #def set_headers
-    #response.headers['Content-Type'] = 'application/vnd.api+json'
-  #end
+  protect_from_forgery with: :exception
+  skip_before_action :verify_authenticity_token
+
 end
