@@ -4,12 +4,19 @@ class RentalsController < ApplicationController
   # GET /rentals
   # GET /rentals.json
   def index
-    @rentals = Rental.all
+    @rentals = Rental.includes(:bookings).all
+    respond_to do |format|
+      format.json { render json: @rentals.to_json(:include => :bookings) }
+      #format.json { render json: @rentals }
+    end
   end
 
   # GET /rentals/1
   # GET /rentals/1.json
   def show
+    respond_to do |format|
+      format.json { render json: @rental.to_json(:include => :bookings) }
+    end
   end
 
   # GET /rentals/new
@@ -64,6 +71,7 @@ class RentalsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_rental
+      #@rental = Rental.includes(:bookings).find(params[:id])
       @rental = Rental.find(params[:id])
     end
 

@@ -69,10 +69,12 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/puma.rb" afterPath="$PROJECT_DIR$/config/puma.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/register_json_api_mime_type.rb" afterPath="$PROJECT_DIR$/config/initializers/register_json_api_mime_type.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/rental.rb" afterPath="$PROJECT_DIR$/app/models/rental.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/rental_test.rb" afterPath="$PROJECT_DIR$/test/models/rental_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/rentals.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/rentals.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/rentals.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rentals.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/rentals.yml" afterPath="$PROJECT_DIR$/test/fixtures/rentals.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/rentals_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/rentals_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/rentals_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/rentals_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/rentals_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/rentals_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/rentals_test.rb" afterPath="$PROJECT_DIR$/test/system/rentals_test.rb" />
@@ -94,8 +96,9 @@
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1508755796224" ignored="false" />
     <file path="/application_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1508755879629" ignored="false" />
-    <file path="/rental.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1508411635598" ignored="false" />
-    <file path="/rentals_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1508415789032" ignored="false" />
+    <file path="/rental.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1508930386972" ignored="false" />
+    <file path="/rentals_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1509024220105" ignored="false" />
+    <file path="/booking.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1508930171374" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,19 +118,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="rentals_controller.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/controllers/rentals_controller.rb">
+      <file leaf-file-name="rental.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/rental.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="9" selection-start="499" selection-end="499" vertical-scroll-proportion="0.25700164">
+            <state line="1" column="3" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="booking.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/booking.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="20" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+            <state line="1" column="20" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="rentals_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/rentals_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="0" selection-start="1919" selection-end="1981" vertical-scroll-proportion="1.3410214">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bookings_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -151,9 +172,10 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/models/booking.rb" />
         <option value="$PROJECT_DIR$/app/models/rental.rb" />
         <option value="$PROJECT_DIR$/app/controllers/rentals_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       </list>
     </option>
   </component>
@@ -552,16 +574,23 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/rental.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="0" selection-start="33" selection-end="33" vertical-scroll-proportion="0.018121911">
+        <state line="3" column="20" selection-start="114" selection-end="114" vertical-scroll-proportion="0.05436573">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/booking.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="20" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+        <state line="1" column="20" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/rental.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="3" selection-start="36" selection-end="36" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -573,9 +602,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/rentals_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="9" selection-start="499" selection-end="499" vertical-scroll-proportion="0.25700164">
+        <state line="74" column="0" selection-start="1919" selection-end="1981" vertical-scroll-proportion="1.3410214">
           <folding />
         </state>
       </provider>
