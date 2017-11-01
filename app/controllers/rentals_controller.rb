@@ -8,6 +8,7 @@ class RentalsController < ApplicationController
     respond_to do |format|
       format.json { render json: @rentals.to_json(:include => :bookings) }
       #format.json { render json: @rentals }
+      format.html { }
     end
   end
 
