@@ -18,7 +18,7 @@ class ApplicationController < ActionController::Base
 
   def unauthorized
     respond_to do |format|
-      format.json { render :json => {"errors":["Unauthorized access"]}}
+      format.json { render :json => {"errors" => ["Unauthorized access"]}}
       format.html { render :status => 401 }
     end
   end
