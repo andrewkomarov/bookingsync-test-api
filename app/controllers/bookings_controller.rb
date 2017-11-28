@@ -32,7 +32,7 @@ class BookingsController < ApplicationController
         format.json { render :show, status: :created, location: @booking }
       else
         format.html { render :new }
-        format.json { render json: @booking.errors, status: :unprocessable_entity }
+        format.json { render json: ErrorSerializer.serialize(@booking.errors), status: :unprocessable_entity }
       end
     end
   end

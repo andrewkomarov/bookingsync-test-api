@@ -4,6 +4,10 @@ class ApplicationController < ActionController::Base
   skip_before_action :verify_authenticity_token
   before_action :check_token, :except => [:unauthorized]
 
+  # Custom errors serializer in order to output errors
+  # in format compatible with JSON API Adapter
+  include ErrorSerializer
+
   # An extremely simply way to check hardcoded auth token
   # We should better use ember-simple-auth-token extension otherwise
   def check_token

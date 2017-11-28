@@ -18,11 +18,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/.keep" afterPath="$PROJECT_DIR$/test/models/.keep" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/.keep" afterPath="$PROJECT_DIR$/test/system/.keep" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vendor/.keep" afterPath="$PROJECT_DIR$/vendor/.keep" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rentals/_rental.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/rentals/_rental.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" afterPath="$PROJECT_DIR$/public/apple-touch-icon-precomposed.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/apple-touch-icon.png" afterPath="$PROJECT_DIR$/public/apple-touch-icon.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/favicon.ico" afterPath="$PROJECT_DIR$/public/favicon.ico" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rentals/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/rentals/index.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171018113600_create_rentals.rb" afterPath="$PROJECT_DIR$/db/migrate/20171018113600_create_rentals.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20171025094854_create_bookings.rb" afterPath="$PROJECT_DIR$/db/migrate/20171025094854_create_bookings.rb" />
@@ -36,6 +34,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/_booking.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/bookings/_booking.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/bookings/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rentals/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/rentals/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rentals/_rental.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/rentals/_rental.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
@@ -74,6 +73,7 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/index.html.erb" afterPath="$PROJECT_DIR$/app/views/bookings/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/bookings/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/bookings/index.json.jbuilder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/rentals/index.json.jbuilder" afterPath="$PROJECT_DIR$/app/views/rentals/index.json.jbuilder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" />
@@ -85,7 +85,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/puma.rb" afterPath="$PROJECT_DIR$/config/puma.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/register_json_api_mime_type.rb" afterPath="$PROJECT_DIR$/config/initializers/register_json_api_mime_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/rental.rb" afterPath="$PROJECT_DIR$/app/models/rental.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/rental_test.rb" afterPath="$PROJECT_DIR$/test/models/rental_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/rentals.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/rentals.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/rentals.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rentals.scss" />
@@ -113,13 +112,14 @@
     <ignored path="bookingsync-test-api.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511780162551" ignored="false" />
-    <file path="/application_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1509547423366" ignored="false" />
+    <file path="/application_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511870593271" ignored="false" />
     <file path="/rental.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511780489444" ignored="false" />
     <file path="/rentals_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1509541095170" ignored="false" />
-    <file path="/booking.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511790112522" ignored="false" />
+    <file path="/booking.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511873307007" ignored="false" />
     <file path="/index.html.erb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1509541331247" ignored="false" />
     <file path="/unauthorized.html.erb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1509544449265" ignored="false" />
     <file path="/app_utils.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511783017008" ignored="false" />
+    <file path="/bookings_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511870652831" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +160,7 @@
       <file leaf-file-name="booking.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/booking.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="4" selection-start="765" selection-end="765" vertical-scroll-proportion="0.56177926">
+            <state line="4" column="1" selection-start="127" selection-end="127" vertical-scroll-proportion="0.072487645">
               <folding />
             </state>
           </provider>
@@ -169,7 +169,7 @@
       <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="74" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
+            <state line="7" column="46" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -187,7 +187,7 @@
       <file leaf-file-name="bookings_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="81" selection-start="764" selection-end="823" vertical-scroll-proportion="0.0">
+            <state line="35" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -223,9 +223,10 @@
         <option value="$PROJECT_DIR$/app/views/rentals/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/rentals_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/application/unauthorized.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/rental.rb" />
         <option value="$PROJECT_DIR$/app/modules/app_utils.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/bookings_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/booking.rb" />
       </list>
     </option>
@@ -647,27 +648,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/rentals_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="81" selection-start="764" selection-end="823" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="74" selection-start="721" selection-end="721" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/modules/app_utils.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="41" selection-start="41" selection-end="72" vertical-scroll-proportion="0.0">
@@ -682,9 +662,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/rentals_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="26" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/bookings_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="46" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/booking.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="4" selection-start="765" selection-end="765" vertical-scroll-proportion="0.56177926">
+        <state line="4" column="1" selection-start="127" selection-end="127" vertical-scroll-proportion="0.072487645">
           <folding />
         </state>
       </provider>

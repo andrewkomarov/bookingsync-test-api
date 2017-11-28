@@ -10,13 +10,13 @@ class Booking < ApplicationRecord
 
   def price_should_be_calculated_correctly
     unless price_correct?
-      errors.add(:price, 'Price is not correct')
+      errors.add(:price, ' - Price is not correct')
     end
   end
 
   def bookings_shouldnt_overlap
     if booking_overlap?
-      errors.add :price, 'Bookings shouldn\'t overlap'
+      errors.add :Dates, ' - This period is not available (Bookings shouldn\'t overlap)'
     end
   end
 
