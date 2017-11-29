@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d0203e5-64ac-409e-82b0-570b6befead1" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controllers/bookings_controller_test.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/test/controllers/rentals_controller_test.rb" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/images/.keep" afterPath="$PROJECT_DIR$/app/assets/images/.keep" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/channels/.keep" afterPath="$PROJECT_DIR$/app/assets/javascripts/channels/.keep" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/concerns/.keep" afterPath="$PROJECT_DIR$/app/controllers/concerns/.keep" />
@@ -47,12 +49,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/application_system_test_case.rb" afterPath="$PROJECT_DIR$/test/application_system_test_case.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/assets.rb" afterPath="$PROJECT_DIR$/config/initializers/assets.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/booking.rb" afterPath="$PROJECT_DIR$/app/models/booking.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/booking_test.rb" afterPath="$PROJECT_DIR$/test/models/booking_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/bookings.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/bookings.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/bookings.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/bookings.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/bookings.yml" afterPath="$PROJECT_DIR$/test/fixtures/bookings.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/bookings_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/bookings_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/bookings_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/bookings_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/bookings_test.rb" afterPath="$PROJECT_DIR$/test/system/bookings_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="$PROJECT_DIR$/config/boot.rb" />
@@ -88,7 +88,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/rentals.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/rentals.coffee" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/rentals.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/rentals.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/rentals.yml" afterPath="$PROJECT_DIR$/test/fixtures/rentals.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/rentals_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/rentals_controller_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/rentals_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/rentals_helper.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/system/rentals_test.rb" afterPath="$PROJECT_DIR$/test/system/rentals_test.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
@@ -119,6 +118,7 @@
     <file path="/unauthorized.html.erb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1509544449265" ignored="false" />
     <file path="/app_utils.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511783017008" ignored="false" />
     <file path="/bookings_controller.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511870652831" ignored="false" />
+    <file path="/booking_test.rb" changelist="2d0203e5-64ac-409e-82b0-570b6befead1" time="1511958004185" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +150,7 @@
       <file leaf-file-name="rental.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/models/rental.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
+            <state line="3" column="25" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -159,7 +159,7 @@
       <file leaf-file-name="booking.rb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/booking.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="48" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.76112026">
+            <state line="32" column="80" selection-start="720" selection-end="796" vertical-scroll-proportion="0.57990116">
               <folding />
             </state>
           </provider>
@@ -227,6 +227,7 @@
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/bookings_controller.rb" />
         <option value="$PROJECT_DIR$/app/models/booking.rb" />
+        <option value="$PROJECT_DIR$/test/models/booking_test.rb" />
       </list>
     </option>
   </component>
@@ -279,6 +280,38 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bookingsync-test-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsync-test-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsync-test-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsync-test-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bookingsync-test-api" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -581,13 +614,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/rentals_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="26" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="34" selection-start="394" selection-end="394" vertical-scroll-proportion="0.0">
@@ -647,20 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/modules/app_utils.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="41" selection-end="72" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/rental.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="71" selection-end="71" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/rentals_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="1" column="26" selection-start="74" selection-end="74" vertical-scroll-proportion="0.0">
@@ -682,9 +694,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/rental.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="25" selection-start="96" selection-end="96" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/models/booking_test.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="2" selection-start="209" selection-end="209" vertical-scroll-proportion="0.14497529">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/modules/app_utils.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="41" selection-start="41" selection-end="72" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/booking.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="48" selection-start="1079" selection-end="1079" vertical-scroll-proportion="0.76112026">
+        <state line="32" column="80" selection-start="720" selection-end="796" vertical-scroll-proportion="0.57990116">
           <folding />
         </state>
       </provider>
