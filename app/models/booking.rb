@@ -35,7 +35,7 @@ class Booking < ApplicationRecord
 
   def booking_overlap?
     # Overlaps if (A.start_at <= B.end_at) and (A.end_at >= B.start_at)
-    overlap = Booking.where("start_at <= ? AND end_at >= ?", end_at, start_at);
+    overlap = Booking.where("rental_id = ? AND (start_at <= ? AND end_at >= ?)", self.rental.id, end_at, start_at);
     !overlap.empty?
   end
 
