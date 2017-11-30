@@ -1,24 +1,24 @@
-# README
+# Bookingsync mini API server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Tested with
 
-Things you may want to cover:
+* Ruby 2.4.1p111 and Rails 5.1.4
 
-* Ruby version
+* MySQL 5 (mysql2 adapter)
 
-* System dependencies
+## Set Up and Run
 
-* Configuration
+* Clone it
 
-* Database creation
+* Development DB name: `bookingsync_api`
 
-* Database initialization
+* Test DB name: `bookingsync_api_test`
 
-* How to run the test suite
+* DB configuration file:  `config/database.yml` 
 
-* Services (job queues, cache servers, search engines, etc.)
+* `$ bundle install`
 
-* Deployment instructions
+* `$ rails server` to run app server
 
-* ...
+* `$ rails test` to run tests
+
